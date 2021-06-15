@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Bootstrap Example</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet"
+	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<script
+	src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script
+	src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<script src="/js/Newsgetrequest.js"></script>
+<script src="/js/statsgetrequest.js"></script>
+<script src="/js/frmgetrequest.js"></script>
+<script src="/js/symgetrequest.js"></script>
+<script src="/js/countryForm.js"></script>
+
+</head>
+<body>
+
+	<div class="container">
+
+		<h2>Task Manager</h2>
+		<div class="row">
+			<div class="col-lg-3">
+			<label>Enter participant id:</label><input type="text" class="form-control" id="participant" placeholder="Enter participant"/>
+			<label>Enter project id:</label><input type="text" class="form-control" id="project" placeholder="Enter Project"/>
+			<label>Enter Title:</label><input type="text" class="form-control" id="title" placeholder="Enter Title"/>
+			<label>Enter Description:</label><input type="text" class="form-control" id="description" placeholder="Enter description"/>
+			<label>Enter Status:</label><input type="text" class="form-control" id="status" placeholder="Enter status"/>
+			<label>Enter Start Date:</label><input type="text" class="form-control" id="start" placeholder="Enter start date"/>
+			<label>Enter End Date:</label><input type="text" class="form-control" id="end" placeholder="Enter end date"/>
+				<button type="button" class="btn" id="task">Create Tasks</button>
+			</div>
+			<div class="col-lg-3">
+			<label>Enter Project Id:</label><input type="text" class="form-control" id="projectid" placeholder="Enter Project Id"/>
+				<button type="button" class="btn" id="frm1">TaskDetails</button>
+			</div>
+			<div class="col-lg-3">
+				<label>Enter task id:</label><input type="text" class="form-control" id="taskid" placeholder="Enter task Id"/>
+				<button type="button" class="btn" id="stats">Get Task Infos</button></br>
+				<label>Title:</label><input type="text" class="form-control" id="inptitle" />
+				<label>Description:</label><input type="text" class="form-control" id="inpdescription" />
+				<label>Status:</label><input type="text" class="form-control" id="inpstatus" />
+				<label>Start Date:</label><input type="text" class="form-control" id="inpstart" />
+				<label>End Date:</label><input type="text" class="form-control" id="inpend" />
+				<button type="button" class="btn" id="update">Update Task</button></br>
+			</div>
+		</div>
+		<div class="panel-group" id="news-group">
+			<div class="panelpanel-info">
+				<div class="panel-heading" id="panel-head-1"></div>
+				<div class="panel-body" id="panel-body-1"></div>
+
+			</div>
+			
+		</div>
+		<canvas id="labelChart"></canvas>
+
+
+	</div>
+
+</body>
+</html>
